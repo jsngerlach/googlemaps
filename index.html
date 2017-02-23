@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Map</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="'contain">
+        <div id="button-group">
+            <button onclick="filterMarkers(this.value)" value="" id="viewAllBtn" class="btn btn-lg btn-default"><img border="0" alt="View All" src="viewall.png"></button>
+            <button onclick="filterMarkers(this.value)" value="ems"  class="btn btn-lg btn-default"><img border="0" alt="EMS" src="icon_report_ems.png"></button>
+            <button onclick="filterMarkers(this.value)" value="fire"  class="btn btn-lg btn-default"><img border="0" alt="Fire" src="icon_report_fire.png"></button>
+            <button onclick="filterMarkers(this.value)" value="hazmat"  class="btn btn-lg btn-default"><img border="0" alt="Hazmat" src="icon_report_hazmat.png"></button>
+            <button onclick="filterMarkers(this.value)" value="mva" id="sortBtn" class="btn btn-lg btn-default"><img border="0" alt="MVA" src="icon_report_mva.png"></button>
+        </div>
+        <div id="map-canvas"></div>
+    </div>
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- google maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0P-Ql1Gdvu0baPK4xmQMchXxQoUk4YH8" type="text/javascript"></script>
+    <!--javascript-->
+    <script src="index.js"></script>
+</body>
+
+</html>
